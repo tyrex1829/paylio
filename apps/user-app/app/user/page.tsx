@@ -1,5 +1,6 @@
 import React from "react";
 import { client } from "@repo/db/client";
+import Balance from "../../components/Balance";
 
 export default async function User() {
   const user = await client.user.create({
@@ -11,6 +12,7 @@ export default async function User() {
 
   return (
     <div>
+      <Balance />
       <h1>dbcdhc</h1>
     </div>
   );
